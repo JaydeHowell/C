@@ -1,5 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <math.h>
+
+typedef struct tokenParser {
+    char* tokens;
+    int numTokens;
+    int pos;
+} tokenParser;
+
+typedef struct expressTree {
+    char type;
+    int value;
+    struct expressTree* left;
+    struct expressTree* right;
+} expressTree;
+
+#define VALIDTOKENS "+-*/0123456789()"
+
+#define MAXIMUMCHARS 100
 
 //main calculator functions
 int calculateSum(int x, int y);
