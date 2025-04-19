@@ -5,4 +5,5 @@ I have operations for simple functions (addition, subtraction, multiplication, a
 C syntax takes some getting used to. The declaring of functions before main and then initializing them after main is unusual to me based on my background,
 but this starts to make sense when you treat it like an index (as well as consider that C has historically been a top to bottom compiler and needs to know functions exist before they are accepted by the compiler).
 ### 4-18-2025
-I've moved the printf operations out of the calculation functions. However, I'm struggling to find an elegant way to accept input from command line.
+I've moved the printf operations out of the calculation functions. However, I'm struggling to find an elegant way to accept input from command line. The only one I can really find is scanf(), which is for well-formatted input (user input is _not_ well-formatted).
+### 4-19-2025
